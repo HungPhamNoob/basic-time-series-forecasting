@@ -9,13 +9,14 @@
 - `numpy` – numerical computations  
 - `matplotlib` / `seaborn` – visualization  
 - `statsmodels` – AR, MA, ARMA, ARIMA modeling  
-- `scikit-learn` – performance metrics, preprocessing  
+- `scikit-learn` – performance metrics, preprocessing, PCA
+- `pmdarima` – auto ARIMA modeling
 
 ---
 
 ## 📊 Overview
 
-This repository contains **basic time series forecasting projects** using **AR, MA, ARMA, and ARIMA models** in Python.  
+This repository contains **basic time series forecasting projects** using **PCA dimensionality reduction combined with ARIMA models** in Python.  
 The goal is to learn how to **analyze, model, and forecast time series data** in practice, with clean, reproducible code.
 
 We cover both types of time series data:
@@ -24,14 +25,17 @@ We cover both types of time series data:
   *Example:* Monthly AirPassengers dataset.  
 
 - **Multivariate Time Series**: Multiple variables are tracked over time, which may influence each other.  
-  *Example:* Stock prices with volume, open, high, low, close.  
+  *Example:* Daily Climate dataset.  
 
 ---
 
 ## 🛠️ Features
 
 - Load and preprocess **time series datasets** (AirPassengers, Bitcoin, etc.)  
-- Visualize **trends, seasonality, and residuals**  
+- Visualize **trends, seasonality, and residuals**
+- **StandardScaler** for data normalization
+- **PCA (Principal Component Analysis)** for dimensionality reduction
+- **Latent variable extraction** and analysis
 - Build models:
   - **AR (Autoregressive)**  
   - **MA (Moving Average)**  
